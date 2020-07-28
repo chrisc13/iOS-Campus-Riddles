@@ -16,6 +16,12 @@
 		837C01E624BFB954003EA339 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837C01E424BFB954003EA339 /* LaunchScreen.storyboard */; };
 		837C01F124BFB954003EA339 /* Campus_RiddlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C01F024BFB954003EA339 /* Campus_RiddlesTests.swift */; };
 		837C01FC24BFB954003EA339 /* Campus_RiddlesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C01FB24BFB954003EA339 /* Campus_RiddlesUITests.swift */; };
+		837C020A24BFBE5D003EA339 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C020924BFBE5D003EA339 /* AuthViewController.swift */; };
+		837C020C24BFBFC0003EA339 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C020B24BFBFC0003EA339 /* MainTabBarController.swift */; };
+		83FA7C2524CF67BE00CDCECB /* WebSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA7C2424CF67BE00CDCECB /* WebSession.swift */; };
+		83FA7C2724CF782100CDCECB /* RIddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA7C2624CF782100CDCECB /* RIddle.swift */; };
+		83FA7C2924CFAEED00CDCECB /* RiddleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA7C2824CFAEED00CDCECB /* RiddleTableViewCell.swift */; };
+		83FA7C2B24D0CDD500CDCECB /* RiddleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA7C2A24D0CDD500CDCECB /* RiddleDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		837C01F724BFB954003EA339 /* Campus RiddlesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Campus RiddlesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		837C01FB24BFB954003EA339 /* Campus_RiddlesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campus_RiddlesUITests.swift; sourceTree = "<group>"; };
 		837C01FD24BFB954003EA339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837C020924BFBE5D003EA339 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		837C020B24BFBFC0003EA339 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		83FA7C2424CF67BE00CDCECB /* WebSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSession.swift; sourceTree = "<group>"; };
+		83FA7C2624CF782100CDCECB /* RIddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIddle.swift; sourceTree = "<group>"; };
+		83FA7C2824CFAEED00CDCECB /* RiddleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddleTableViewCell.swift; sourceTree = "<group>"; };
+		83FA7C2A24D0CDD500CDCECB /* RiddleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RiddleDetailViewController.swift; path = "Campus Riddles/View/RiddleDetailViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +113,10 @@
 		837C01D624BFB952003EA339 /* Campus Riddles */ = {
 			isa = PBXGroup;
 			children = (
-				837C01D724BFB952003EA339 /* AppDelegate.swift */,
-				837C01D924BFB952003EA339 /* SceneDelegate.swift */,
-				837C01DB24BFB952003EA339 /* FirstViewController.swift */,
-				837C01DD24BFB952003EA339 /* SecondViewController.swift */,
-				837C01DF24BFB952003EA339 /* Main.storyboard */,
+				83EE9D4424C3E0DD00EE2F32 /* Model */,
+				83EE9D4524C3E0E500EE2F32 /* View */,
+				83EE9D4324C3E0D100EE2F32 /* Controller */,
 				837C01E224BFB954003EA339 /* Assets.xcassets */,
-				837C01E424BFB954003EA339 /* LaunchScreen.storyboard */,
 				837C01E724BFB954003EA339 /* Info.plist */,
 			);
 			path = "Campus Riddles";
@@ -129,6 +138,39 @@
 				837C01FD24BFB954003EA339 /* Info.plist */,
 			);
 			path = "Campus RiddlesUITests";
+			sourceTree = "<group>";
+		};
+		83EE9D4324C3E0D100EE2F32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83FA7C2A24D0CDD500CDCECB /* RiddleDetailViewController.swift */,
+				837C01D724BFB952003EA339 /* AppDelegate.swift */,
+				837C01D924BFB952003EA339 /* SceneDelegate.swift */,
+				837C020924BFBE5D003EA339 /* AuthViewController.swift */,
+				837C020B24BFBFC0003EA339 /* MainTabBarController.swift */,
+				837C01DB24BFB952003EA339 /* FirstViewController.swift */,
+				837C01DD24BFB952003EA339 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83EE9D4424C3E0DD00EE2F32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83FA7C2424CF67BE00CDCECB /* WebSession.swift */,
+				83FA7C2624CF782100CDCECB /* RIddle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83EE9D4524C3E0E500EE2F32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				837C01DF24BFB952003EA339 /* Main.storyboard */,
+				837C01E424BFB954003EA339 /* LaunchScreen.storyboard */,
+				83FA7C2824CFAEED00CDCECB /* RiddleTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +306,13 @@
 			files = (
 				837C01DE24BFB952003EA339 /* SecondViewController.swift in Sources */,
 				837C01DC24BFB952003EA339 /* FirstViewController.swift in Sources */,
+				83FA7C2524CF67BE00CDCECB /* WebSession.swift in Sources */,
+				83FA7C2924CFAEED00CDCECB /* RiddleTableViewCell.swift in Sources */,
+				83FA7C2724CF782100CDCECB /* RIddle.swift in Sources */,
+				837C020C24BFBFC0003EA339 /* MainTabBarController.swift in Sources */,
+				837C020A24BFBE5D003EA339 /* AuthViewController.swift in Sources */,
 				837C01D824BFB952003EA339 /* AppDelegate.swift in Sources */,
+				83FA7C2B24D0CDD500CDCECB /* RiddleDetailViewController.swift in Sources */,
 				837C01DA24BFB952003EA339 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZ3P6M2M77;
 				INFOPLIST_FILE = "Campus Riddles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZ3P6M2M77;
 				INFOPLIST_FILE = "Campus Riddles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
